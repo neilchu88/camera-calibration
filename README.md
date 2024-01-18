@@ -1,5 +1,6 @@
 # camera-calibration
 using photo to calibrate camera
+本校正使用張氏校正，參考論文< A Flexible New Technique for Camera Calibration >和 open cv網站:https://docs.opencv.org/4.x/d9/d61/tutorial_py_morphological_ops.html
 
 使用方法如下
 1. 開啟gui.py
@@ -8,7 +9,7 @@ using photo to calibrate camera
 4. ComboBox選擇指定的照片
 5. 按Find Extrinsic Matrix求得指定照片的外部參數，若該照片校正板無法順利被偵測，會出現"This Picture can't Find Chessboard Corners"
 6. 按Reprojection Error求得指定照片的重投影誤差、重投影誤差平均和重投影誤差的標準差，若該照片校正板無法順利被偵測，會出現"This Picture can't Find Chessboard Corners"
-7. 按Undistort Image得到按照內部參數及畸變矩陣復原的所有照片，其中alpha 設為1，可依照需求在calibrate.py的undistort_image涵式中調整
+7. 按Undistort Image得到按照內部參數及畸變矩陣復原的所有照片，其中alpha 設為1，可依照需求在calibrate.py的undistort_image函式中調整
 
 Usage Instructions
 
